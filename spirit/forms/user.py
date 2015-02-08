@@ -50,7 +50,7 @@ class UserProfileForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ("first_name", "last_name", "location", "timezone")
+        fields = ("first_name", "last_name", "timezone")
 
     def __init__(self, *args, **kwargs):
         super(UserProfileForm, self).__init__(*args, **kwargs)
